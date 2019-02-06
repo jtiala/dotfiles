@@ -3,9 +3,12 @@ set packpath=~/.dotfiles/vim
 
 " theme
 syntax on
-colorscheme monokai
 set termguicolors
 set guifont=Fira\ Code\ 12
+colorscheme snazzy
+let g:lightline = {
+\ 'colorscheme': 'snazzy',
+\ }
 
 " settings
 set hidden

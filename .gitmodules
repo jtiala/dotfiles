@@ -1,9 +1,6 @@
 [submodule "fonts/FiraCode"]
 	path = fonts/FiraCode
 	url = https://github.com/tonsky/FiraCode.git
-[submodule "vim/pack/packages/start/vim-monokai"]
-	path = vim/pack/packages/start/vim-monokai
-	url = https://github.com/crusoexia/vim-monokai.git
 [submodule "vim/pack/packages/start/vim-signify"]
 	path = vim/pack/packages/start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
@@ -16,3 +13,6 @@
 [submodule "vim/pack/packages/start/lightline.vim"]
 	path = vim/pack/packages/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/pack/packages/start/vim-snazzy"]
+	path = vim/pack/packages/start/vim-snazzy
+	url = https://github.com/connorholyday/vim-snazzy.git
