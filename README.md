@@ -63,6 +63,10 @@
 		chmod +x ~/.dotfiles/scripts/*
 		~/.dotfiles/scripts/install.sh
 
+## Make it your own!
+
+Feel free to fork this repo and base your dotfiles on my setup. Be sure to change yout git name and email at `git/.gitconfig`.
+
 [zsh]: http://www.zsh.org
 [pure]: https://github.com/sindresorhus/pure
 [git]: https://git-scm.com
