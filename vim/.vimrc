@@ -37,6 +37,7 @@ set termencoding=utf-8
 set fileencoding=utf8
 set whichwrap+=<,>,h,l,[,]
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set noshowmode
 
 " hotkeys
 let mapleader=","
@@ -69,8 +70,3 @@ nmap <leader>n <plug>(signify-next-hunk)
 nmap <leader>N <plug>(signify-prev-hunk)
 nmap <leader>s :SignifyToggle <CR>:set nu!<CR>
 
-" vim-airline
-let g:airline_powerline_fonts = 1
-let g:airline_section_y=""
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'trailing'] 
