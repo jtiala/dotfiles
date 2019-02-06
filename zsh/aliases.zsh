@@ -8,6 +8,10 @@ unset GREP_OPTS
 
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias ~='cd ~'
 
 alias l='ls -l'
 alias ll='ls -al'
