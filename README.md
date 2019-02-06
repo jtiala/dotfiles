@@ -22,8 +22,12 @@
 		
 * Set correct premissions for ZSH
 
-		sudo chmod -R 755 /usr/local/share/zsh
-		sudo chown -R root:staff /usr/local/share/zsh
+		sudo chmod -R 755 /usr/local/share/zsh /usr/local/share/zsh-completions \
+			/usr/local/Cellar/zsh /usr/local/Cellar/zsh-completions \
+			/usr/local/Homebrew/completions /usr/local/Homebrew/Library/Taps/homebrew/homebrew-services/completions
+		sudo chown -R root:staff /usr/local/share/zsh /usr/local/share/zsh-completions \
+			/usr/local/Cellar/zsh /usr/local/Cellar/zsh-completions \
+			/usr/local/Homebrew/completions /usr/local/Homebrew/Library/Taps/homebrew/homebrew-services/completions
 		
 * Set ZSH as default shell
 
@@ -35,8 +39,8 @@
 		
 * Run install script
 
-		chmod +x scripts/*
-		./scripts/install.sh
+		chmod +x ~/.dotfiles/scripts/*
+		~/.dotfiles/scripts/install.sh
 
 ### Debian & Ubuntu
 
@@ -49,14 +53,15 @@
 * Set ZSH as default shell
 
 		chsh -s $(which zsh)
+
 * Clone this repository to `~/.dotfiles`
 
 		git clone --recursive https://github.com/jtiala/dotfiles.git ~/.dotfiles
 		
 * Run install script
 
-		chmod +x scripts/*
-		./scripts/install.sh
+		chmod +x ~/.dotfiles/scripts/*
+		~/.dotfiles/scripts/install.sh
 
 [zsh]: http://www.zsh.org
 [pure]: https://github.com/sindresorhus/pure
