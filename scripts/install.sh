@@ -14,6 +14,9 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	cp -R ../fonts/* ~/Library/Fonts/.
 fi
 
+# Don't show macOS last login message
+touch ~/.hushlogin
+
 # Backup old dotfiles
 ./backup.sh
 
