@@ -22,3 +22,6 @@
 [submodule "vim/pack/packages/start/vim-gitbranch"]
 	path = vim/pack/packages/start/vim-gitbranch
 	url = https://github.com/itchyny/vim-gitbranch.git
+[submodule "iterm/iterm2-snazzy"]
+	path = iterm/iterm2-snazzy
+	url = https://github.com/sindresorhus/iterm2-snazzy.git
