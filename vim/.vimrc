@@ -6,9 +6,6 @@ syntax on
 set termguicolors
 set guifont=Fira\ Code\ 12
 colorscheme snazzy
-let g:lightline = {
-\ 'colorscheme': 'snazzy',
-\ }
 
 " settings
 set hidden
@@ -41,6 +38,8 @@ set fileencoding=utf8
 set whichwrap+=<,>,h,l,[,]
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set noshowmode
+set showtabline=2
+set guioptions-=e
 
 " hotkeys
 let mapleader=","
@@ -72,4 +71,19 @@ let g:signify_update_on_focusgained = 1
 nmap <leader>n <plug>(signify-next-hunk)
 nmap <leader>N <plug>(signify-prev-hunk)
 nmap <leader>s :SignifyToggle <CR>:set nu!<CR>
+
+" lightline
+let g:lightline = {
+			\ 'colorscheme': 'snazzy',
+			\ 'active': {
+			\   'left': [ [ 'mode', 'paste' ],
+ 			\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+			\ },
+			\ 'component_function': {
+			\   'gitbranch': 'gitbranch#name'
+			\ },
+			\ }
+let g:lightline.tabline = {'left': [['buffers']], 'right': []}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type = {'buffers': 'tabsel'}
 

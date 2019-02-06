@@ -19,3 +19,6 @@
 [submodule "vim/pack/packages/start/lightline-bufferline"]
 	path = vim/pack/packages/start/lightline-bufferline
 	url = https://github.com/mengelbrecht/lightline-bufferline.git
+[submodule "vim/pack/packages/start/vim-gitbranch"]
+	path = vim/pack/packages/start/vim-gitbranch
+	url = https://github.com/itchyny/vim-gitbranch.git
