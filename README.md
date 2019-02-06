@@ -19,7 +19,7 @@
 * Install dependencies
 
 		brew install git zsh zsh-completions tmux vim fasd
-		
+
 * Set correct premissions for ZSH
 
 		sudo chmod -R 755 /usr/local/share/zsh /usr/local/share/zsh-completions \
@@ -28,15 +28,15 @@
 		sudo chown -R root:staff /usr/local/share/zsh /usr/local/share/zsh-completions \
 			/usr/local/Cellar/zsh /usr/local/Cellar/zsh-completions \
 			/usr/local/Homebrew/completions /usr/local/Homebrew/Library/Taps/homebrew/homebrew-services/completions
-		
+
 * Set ZSH as default shell
 
 		chsh -s /bin/zsh
-		
+
 * Clone this repository to `~/.dotfiles`
 
 		git clone --recursive https://github.com/jtiala/dotfiles.git ~/.dotfiles
-		
+
 * Run install script
 
 		chmod +x ~/.dotfiles/scripts/*
@@ -49,7 +49,7 @@
 		sudo add-apt-repository ppa:aacebedo/fasd
 		sudo apt-get update
 		sudo apt-get install git zsh tmux vim fasd
-		
+
 * Set ZSH as default shell
 
 		chsh -s $(which zsh)
@@ -57,7 +57,7 @@
 * Clone this repository to `~/.dotfiles`
 
 		git clone --recursive https://github.com/jtiala/dotfiles.git ~/.dotfiles
-		
+
 * Run install script
 
 		chmod +x ~/.dotfiles/scripts/*
