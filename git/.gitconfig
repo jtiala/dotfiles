@@ -7,6 +7,14 @@
 [github]
 	user = jtiala
 
+[alias]
+	co = checkout
+	st = status
+	s = status
+	a = add
+	aa = add -A .
+	cm = commit -m
+
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
