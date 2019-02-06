@@ -82,8 +82,8 @@ let g:lightline = {
 			\ 'component_function': {
 			\   'gitbranch': 'gitbranch#name'
 			\ },
+			\ 'component_expand': {'buffers': 'lightline#bufferline#buffers'},
+			\ 'component_type': {'buffers': 'tabsel'},
+			\ 'tabline': {'left': [['buffers']], 'right': []}
 			\ }
-let g:lightline.tabline = {'left': [['buffers']], 'right': []}
-let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type = {'buffers': 'tabsel'}
 
