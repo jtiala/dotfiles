@@ -1,6 +1,3 @@
-[submodule "fonts/FiraCode"]
-	path = fonts/FiraCode
-	url = https://github.com/tonsky/FiraCode.git
 [submodule "vim/pack/packages/start/vim-signify"]
 	path = vim/pack/packages/start/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
@@ -25,3 +22,7 @@
 [submodule "iterm/iterm2-snazzy"]
 	path = iterm/iterm2-snazzy
 	url = https://github.com/sindresorhus/iterm2-snazzy.git
+[submodule "emacs/spacemacs"]
+	path = emacs/spacemacs
+	url = https://github.com/syl20bnr/spacemacs.git
+	branch = develop

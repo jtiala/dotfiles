@@ -18,7 +18,11 @@
 
 * Install dependencies
 
-		brew install git zsh zsh-completions tmux vim fasd
+		brew tap homebrew/cask-fonts
+		brew tap d12frosted/emacs-plus
+		brew cask install font-fira-code font-source-code-pro
+		brew install git zsh zsh-completions tmux fasd vim emacs-plus
+		ln -s /usr/local/Cellar/emacs-plus/*/Emacs.app/ /Applications/
 
 * Set correct premissions for ZSH
 
@@ -48,7 +52,7 @@
 
 		sudo add-apt-repository ppa:aacebedo/fasd
 		sudo apt-get update
-		sudo apt-get install git zsh tmux vim fasd
+		sudo apt-get install git zsh tmux fasd vim emacs
 
 * Set ZSH as default shell
 

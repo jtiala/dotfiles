@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # vim: ts=4 sw=4
 
+echo "Running backup.sh"
+
 # Abort on error
 set -e
 
@@ -10,7 +12,7 @@ cd "$parent_path"
 
 # Remove old backups
 echo "Removing old backups"
-rm -rf .bak
+rm -rf ../.bak
 
 # Backup old dotfiles
 echo "Backing up old dotfiles"
@@ -21,4 +23,9 @@ mkdir ../.bak
 [ -f "../../.vimrc" ] && cp ../../.vimrc ../.bak/.vimrc.bak
 [ -d "../../.vim" ] && cp -R ../../.vim/ ../.bak/.vim.bak
 [ -f "../../.tmux.conf" ] && cp ../../.tmux.conf ../.bak/.tmux.conf.bak
+[ -d "../../.emacs.d" ] && cp -R ../../.emacs.d/ ../.bak/.emacs.d.bak
+[ -f "../../.emacs" ] && cp  ../../.emacs ../.bak/.emacs.bak
+[ -f "../../.spacemacs" ] && cp  ../../.spacemacs ../.bak/.spacemacs.bak
+
+echo "backup.sh finished"
 
