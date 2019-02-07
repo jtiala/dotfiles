@@ -19,14 +19,18 @@ fi
 # Update & upgrade homebrew formulae & packages
 if [ "$(uname -s)" == "Darwin" ]; then
 	echo "Updating Homebrew formulae"
-	brew update
+	brew update 2>/dev/null
 	echo "Upgrading Homebrew packages"
-	brew upgrade
+	brew upgrade 2>/dev/null
 fi
+
+# Pull latest changes from origin
+echo "Pulling from origin"
+git pull
 
 # Update submodules
 echo "Updating submodules"
-git submodule update --remote
+git submodule update --recursive --remote
 
 # Commit changes if any
 if output=$(git status --porcelain) && [ -z "$output" ]; then
