@@ -3,9 +3,6 @@
 
 echo "Running update.sh"
 
-# Abort on error
-set -e
-
 # cd to the folder of the script to ensure correct paths
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$parent_path"
@@ -19,9 +16,9 @@ fi
 # Update & upgrade homebrew formulae & packages
 if [ "$(uname -s)" == "Darwin" ]; then
 	echo "Updating Homebrew formulae"
-	brew update 2>/dev/null
+	brew update
 	echo "Upgrading Homebrew packages"
-	brew upgrade 2>/dev/null
+	brew upgrade
 fi
 
 # Pull latest changes from origin
