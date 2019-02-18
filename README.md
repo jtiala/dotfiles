@@ -47,6 +47,7 @@
 
 * Install dependencies
 
+		sudo apt-get install software-properties-common dirmngr
 		sudo add-apt-repository ppa:aacebedo/fasd
 		sudo apt-get update
 		sudo apt-get install git zsh tmux fasd vim emacs
