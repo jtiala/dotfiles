@@ -40,27 +40,41 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set noshowmode
 set showtabline=2
 set guioptions-=e
+set splitbelow
+set splitright
 
 " hotkeys
 let mapleader=","
 set pastetoggle=<leader>p
 nmap <silent> <leader>/ :nohlsearch<CR>
 nmap <leader>w :set wrap!<CR>
-nmap <leader>. :bp<CR>
-nmap <leader>- :bn<CR>
-nmap <leader>l <C-w>l
-nmap <leader>h <C-w>h
-nmap <leader>j <C-w>j
-nmap <leader>k <C-w>k
-nmap <leader>d :bd!<CR>
-nmap <leader>e :bd!<CR>:e
 nmap <leader>z :set list!<CR>
 nnoremap t <C-]>
 nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
 
+" buffer hotkeys
+nmap <leader>. :bp<CR>
+nmap <leader>- :bn<CR>
+nmap <leader>d :bd!<CR>
+nmap <leader>e :bd!<CR>:e
+
+" split hotkeys
+nmap <leader>l <C-w>l
+nmap <leader>h <C-w>h
+nmap <leader>j <C-w>j
+nmap <leader>k <C-w>k
+nmap <leader><Right> <C-w>l
+nmap <leader><Left> <C-w>h
+nmap <leader><Down> <C-w>j
+nmap <leader><Up> <C-w>k
+
 " aliases
 cmap w!! w !sudo tee % >/dev/null
+
+" netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 0 
 
 " vim-signify
 let g:signify_vcs_list = ['git']

@@ -26,3 +26,6 @@
 	path = emacs/spacemacs
 	url = https://github.com/syl20bnr/spacemacs.git
 	branch = develop
+[submodule "vim/pack/packages/start/vim-fireplace"]
+	path = vim/pack/packages/start/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace.git
