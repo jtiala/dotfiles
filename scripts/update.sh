@@ -33,9 +33,10 @@ git submodule update --recursive --remote
 if ! (output=$(git status --porcelain) && [ -z "$output" ]); then
 	echo "Commiting changes"
 	git commit -am 'Updated submodules'
-	echo "Pushing to origin"
-	git push origin master
 fi
+
+echo "Pushing to origin"
+git push origin master
 
 echo "update.sh finished"
 
