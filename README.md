@@ -5,6 +5,7 @@
 * [ZSH][zsh] with [Pure][pure] prompt
 * [Git][git]
 * [Vim][vim]
+* [Spacemacs][spacemacs]
 * [tmux][tmux]
 * [fasd][fasd]
 
@@ -73,6 +74,7 @@ Feel free to fork this repo and base your dotfiles on my setup. Be sure to chang
 [pure]: https://github.com/sindresorhus/pure
 [git]: https://git-scm.com
 [vim]: https://www.vim.org
+[spacemacs]: http://spacemacs.org
 [tmux]: https://github.com/tmux/tmux/wiki
 [fasd]: https://github.com/clvv/fasd
 [homebrew]: https://brew.sh
