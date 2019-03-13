@@ -64,10 +64,6 @@ nmap <leader>l <C-w>l
 nmap <leader>h <C-w>h
 nmap <leader>j <C-w>j
 nmap <leader>k <C-w>k
-nmap <leader><Right> <C-w>l
-nmap <leader><Left> <C-w>h
-nmap <leader><Down> <C-w>j
-nmap <leader><Up> <C-w>k
 
 " aliases
 cmap w!! w !sudo tee % >/dev/null

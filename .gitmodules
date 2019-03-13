@@ -16,9 +16,6 @@
 [submodule "vim/pack/packages/start/lightline-bufferline"]
 	path = vim/pack/packages/start/lightline-bufferline
 	url = https://github.com/mengelbrecht/lightline-bufferline.git
-[submodule "vim/pack/packages/start/vim-gitbranch"]
-	path = vim/pack/packages/start/vim-gitbranch
-	url = https://github.com/itchyny/vim-gitbranch.git
 [submodule "iterm/iterm2-snazzy"]
 	path = iterm/iterm2-snazzy
 	url = https://github.com/sindresorhus/iterm2-snazzy.git
@@ -29,3 +26,18 @@
 [submodule "vim/pack/packages/start/vim-fireplace"]
 	path = vim/pack/packages/start/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
+[submodule "vim/pack/packages/start/paredit.vim"]
+	path = vim/pack/packages/start/paredit.vim
+	url = https://github.com/vim-scripts/paredit.vim
+[submodule "vim/pack/packages/start/vim-cljfmt"]
+	path = vim/pack/packages/start/vim-cljfmt
+	url = https://github.com/venantius/vim-cljfmt.git
+[submodule "vim/pack/packages/start/editorconfig-vim"]
+	path = vim/pack/packages/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/pack/packages/start/vim-prettier"]
+	path = vim/pack/packages/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier.git
+[submodule "vim/pack/packages/start/vim-gitbranch"]
+	path = vim/pack/packages/start/vim-gitbranch
+	url = https://github.com/itchyny/vim-gitbranch.git
