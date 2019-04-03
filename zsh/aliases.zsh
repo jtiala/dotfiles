@@ -19,3 +19,5 @@ alias ll='ls -al'
 # Quick open files with vim using fasd
 alias v='f -e vim'
 
+# xterm-256color term breaks irssi
+alias irssi='TERM=screen-256color irssi'
