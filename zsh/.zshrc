@@ -15,6 +15,7 @@ export EDITOR=vim
 export CLICOLOR=1
 
 source $zsh_path/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $zsh_path/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $zsh_path/history.zsh
 source $zsh_path/completion.zsh
 source $zsh_path/keys.zsh

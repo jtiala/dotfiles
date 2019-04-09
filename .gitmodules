@@ -41,3 +41,6 @@
 [submodule "vim/pack/packages/start/vim-gitbranch"]
 	path = vim/pack/packages/start/vim-gitbranch
 	url = https://github.com/itchyny/vim-gitbranch.git
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
