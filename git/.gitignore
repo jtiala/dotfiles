@@ -17,7 +17,8 @@ dwsync.xml
 .komodotools
 nbproject
 .idea
-.vscode
+.vscode/*
+!.vscode/launch.json
 
 # OS generated files
 ._*
