@@ -16,6 +16,8 @@ alias ~='cd ~'
 alias l='ls -l'
 alias ll='ls -al'
 
+alias please='sudo $(fc -ln -1)'
+
 # Quick open files with vim using fasd
 alias v='f -e vim'
 
