@@ -32,5 +32,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 
 # rbenv
-[ -s "$HOME/.rbenv/bin" ] && eval $(rbenv init -)
+[ -s "$HOME/.rbenv" ] && eval "$(rbenv init -)"
 
