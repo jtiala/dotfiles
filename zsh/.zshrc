@@ -21,16 +21,32 @@ source $zsh_path/completion.zsh
 source $zsh_path/keys.zsh
 source $zsh_path/aliases.zsh
 
-# Init fasd if available
+export PATH=$HOME/bin:$PATH
+
+# fasd
 if command -v fasd >/dev/null 2>&1; then
   eval "$(fasd --init zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install posix-alias)"
 fi
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+# nvm
+if [ -d "/usr/local/opt/nvm" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+fi
 
 # rbenv
-[ -s "$HOME/.rbenv" ] && eval "$(rbenv init -)"
+if [ -d "$HOME/.rbenv" ]; then
+  eval "$(rbenv init -)"
+  export PATH=$HOME/.rbenv/bin:$PATH
+fi
+
+# python
+if [ -d "/usr/local/opt/python/libexec" ]; then
+  export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
+  if [ -d "$HOME/Library/Python/3.7" ]; then
+    export PATH=/Users/joonas.tiala/Library/Python/3.7/bin:$PATH
+  fi
+fi
 
