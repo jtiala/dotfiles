@@ -19,10 +19,6 @@
 [submodule "iterm/iterm2-snazzy"]
 	path = iterm/iterm2-snazzy
 	url = https://github.com/sindresorhus/iterm2-snazzy.git
-[submodule "emacs/spacemacs"]
-	path = emacs/spacemacs
-	url = https://github.com/syl20bnr/spacemacs.git
-	branch = develop
 [submodule "vim/pack/packages/start/vim-fireplace"]
 	path = vim/pack/packages/start/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
