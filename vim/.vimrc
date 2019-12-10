@@ -5,6 +5,7 @@ set packpath=~/.dotfiles/vim
 syntax on
 set termguicolors
 set guifont=Fira\ Code\ 12
+let g:SnazzyTransparent = 1
 colorscheme snazzy
 
 " settings
