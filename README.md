@@ -5,7 +5,6 @@
 * [ZSH][zsh] with [Pure][pure] prompt
 * [Git][git]
 * [Vim][vim]
-* [Spacemacs][spacemacs]
 * [tmux][tmux]
 * [fasd][fasd]
 
@@ -20,10 +19,8 @@
 * Install dependencies
 
 		brew tap homebrew/cask-fonts
-		brew tap d12frosted/emacs-plus
 		brew cask install font-fira-code font-source-code-pro
-		brew install git zsh zsh-completions tmux fasd vim emacs-plus
-		ln -s /usr/local/Cellar/emacs-plus/*/Emacs.app/ /Applications/
+		brew install git zsh zsh-completions tmux fasd vim
 
 * Set correct premissions for ZSH
 
@@ -74,7 +71,6 @@ Feel free to fork this repo and base your dotfiles on my setup. Be sure to chang
 [pure]: https://github.com/sindresorhus/pure
 [git]: https://git-scm.com
 [vim]: https://www.vim.org
-[spacemacs]: http://spacemacs.org
 [tmux]: https://github.com/tmux/tmux/wiki
 [fasd]: https://github.com/clvv/fasd
 [homebrew]: https://brew.sh

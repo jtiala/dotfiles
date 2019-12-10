@@ -24,9 +24,6 @@ echo "Removing old dotfiles"
 [ -f "../../.vimrc" ] && rm ../../.vimrc
 [ -d "../../.vim" ] && rm -r ../../.vim
 [ -f "../../.tmux.conf" ] && rm ../../.tmux.conf
-[ -e "../../.emacs.d" ] && rm -rf ../../.emacs.d
-[ -f "../../.emacs" ] && rm ../../.emacs
-[ -f "../../.spacemacs" ] && rm ../../.spacemacs
 
 # Symlink new dotfiles
 echo "Symlinking new dotfiles"
@@ -35,8 +32,6 @@ ln -sF ~/.dotfiles/zsh/.zshenv ~/.zshenv
 ln -sF ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sF ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -sF ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
-ln -sF ~/.dotfiles/emacs/spacemacs ~/.emacs.d
-ln -sF ~/.dotfiles/emacs/.spacemacs ~/.spacemacs
 
 echo "install.sh finished"
 
