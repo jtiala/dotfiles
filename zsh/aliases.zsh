@@ -13,8 +13,8 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias ~='cd ~'
 
-alias l='ls -l'
-alias ll='ls -al'
+alias l='ls -lh'
+alias ll='ls -alh'
 
 alias please='sudo $(fc -ln -1)'
 
