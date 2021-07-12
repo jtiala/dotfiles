@@ -35,6 +35,11 @@ if [ -d "/usr/local/opt/nvm" ]; then
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 fi
 
+# avn
+if [ -d "$HOME/.avn/bin" ]; then
+  [ -s "$HOME/.avn/bin/avn.sh" ] && source "$HOME/.avn/bin/avn.sh" 
+fi
+
 # rbenv
 if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
