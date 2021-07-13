@@ -24,6 +24,7 @@ echo "Removing old dotfiles"
 [ -f "../../.vimrc" ] && rm ../../.vimrc
 [ -d "../../.vim" ] && rm -r ../../.vim
 [ -f "../../.tmux.conf" ] && rm ../../.tmux.conf
+[ -f "../../.hyper.js" ] && rm ../../.hyper.js
 
 # Symlink new dotfiles
 echo "Symlinking new dotfiles"
@@ -32,6 +33,7 @@ ln -sF ~/.dotfiles/zsh/.zshenv ~/.zshenv
 ln -sF ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sF ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -sF ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -sF ~/.dotfiles/hyper/.hyper.js ~/.hyper.js
 
 echo "install.sh finished"
 

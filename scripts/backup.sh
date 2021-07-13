@@ -23,6 +23,7 @@ mkdir ../.bak
 [ -f "../../.vimrc" ] && cp ../../.vimrc ../.bak/.vimrc.bak
 [ -d "../../.vim" ] && cp -R ../../.vim/ ../.bak/.vim.bak
 [ -f "../../.tmux.conf" ] && cp ../../.tmux.conf ../.bak/.tmux.conf.bak
+[ -f "../../.hyper.js" ] && cp ../../.hyper.js ../.bak/.hyper.js.bak
 
 echo "backup.sh finished"
 
