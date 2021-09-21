@@ -34,7 +34,7 @@
 
 * Clone this repository to `~/.dotfiles`
 
-		git clone --recursive https://github.com/jtiala/dotfiles.git ~/.dotfiles
+		git clone --recursive git@github.com:jtiala/dotfiles.git ~/.dotfiles
 
 * Run install script
 
