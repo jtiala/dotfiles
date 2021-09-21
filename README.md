@@ -19,7 +19,7 @@
 * Install dependencies
 
 		brew tap homebrew/cask-fonts
-		brew cask install font-fira-code font-source-code-pro
+		brew install --cask font-victor-mono
 		brew install git zsh zsh-completions tmux fasd vim
 
 * Set correct premissions for ZSH
