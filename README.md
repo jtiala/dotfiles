@@ -7,6 +7,7 @@
 * [Vim][vim]
 * [tmux][tmux]
 * [fasd][fasd]
+* [hyper][hyper]
 
 ## Installation
 
@@ -14,19 +15,13 @@
 
 * Install [Homebrew][homebrew]
 
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 * Install dependencies
 
 		brew tap homebrew/cask-fonts
-		brew install --cask font-victor-mono
+		brew install --cask font-victor-mono font-fira-code
 		brew install git zsh zsh-completions tmux fasd vim
-
-* Set correct premissions for ZSH
-
-		chmod go-w '/usr/local/share'
-		sudo chmod -R 755 /usr/local/share/zsh /usr/local/share/zsh-completions /usr/local/Cellar/zsh /usr/local/Cellar/zsh-completions /usr/local/Homebrew/completions /usr/local/Homebrew/Library/Taps/homebrew/homebrew-services/completions
-		sudo chown -R root:staff /usr/local/share/zsh /usr/local/share/zsh-completions /usr/local/Cellar/zsh /usr/local/Cellar/zsh-completions /usr/local/Homebrew/completions /usr/local/Homebrew/Library/Taps/homebrew/homebrew-services/completions
 
 * Set ZSH as default shell
 
@@ -73,4 +68,5 @@ Feel free to fork this repo and base your dotfiles on my setup. Be sure to chang
 [vim]: https://www.vim.org
 [tmux]: https://github.com/tmux/tmux/wiki
 [fasd]: https://github.com/clvv/fasd
+[hyper]: https://hyper.is
 [homebrew]: https://brew.sh
