@@ -1,12 +1,13 @@
 set nocompatible
 set packpath=~/.dotfiles/vim
 
+
 " theme
-syntax on
+set guifont=Victor\ Mono\ 12
 set termguicolors
-set guifont=Fira\ Code\ 12
-let g:SnazzyTransparent = 1
-colorscheme snazzy
+packadd! dracula
+syntax enable
+colorscheme dracula
 
 " settings
 set hidden
@@ -85,7 +86,7 @@ nmap <leader>s :SignifyToggle <CR>:set nu!<CR>
 
 " lightline
 let g:lightline = {
-			\ 'colorscheme': 'snazzy',
+			\ 'colorscheme': 'darcula',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
  			\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
