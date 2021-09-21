@@ -10,15 +10,9 @@
 [submodule "vim/pack/packages/start/lightline.vim"]
 	path = vim/pack/packages/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
-[submodule "vim/pack/packages/start/vim-snazzy"]
-	path = vim/pack/packages/start/vim-snazzy
-	url = https://github.com/connorholyday/vim-snazzy.git
 [submodule "vim/pack/packages/start/lightline-bufferline"]
 	path = vim/pack/packages/start/lightline-bufferline
 	url = https://github.com/mengelbrecht/lightline-bufferline.git
-[submodule "iterm/iterm2-snazzy"]
-	path = iterm/iterm2-snazzy
-	url = https://github.com/sindresorhus/iterm2-snazzy.git
 [submodule "vim/pack/packages/start/vim-fireplace"]
 	path = vim/pack/packages/start/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
