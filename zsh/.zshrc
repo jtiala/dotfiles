@@ -51,7 +51,7 @@ if [ -d "/usr/local/opt/python/libexec" ]; then
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
   if [ -d "$HOME/Library/Python/3.7" ]; then
-    export PATH=/Users/joonas.tiala/Library/Python/3.7/bin:$PATH
+    export PATH=$HOME/Library/Python/3.7/bin:$PATH
   fi
 fi
 
