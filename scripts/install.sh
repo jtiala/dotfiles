@@ -21,6 +21,7 @@ echo "Removing old dotfiles"
 [ -f "../../.gitconfig" ] && rm ../../.gitconfig
 [ -f "../../.zshenv" ] && rm ../../.zshenv
 [ -f "../../.zshrc" ] && rm ../../.zshrc
+[ -f "../../.zprofile" ] && rm ../../.zprofile
 [ -f "../../.vimrc" ] && rm ../../.vimrc
 [ -d "../../.vim" ] && rm -r ../../.vim
 [ -f "../../.tmux.conf" ] && rm ../../.tmux.conf
@@ -31,6 +32,7 @@ echo "Symlinking new dotfiles"
 ln -sF ~/.dotfiles/git/.gitconfig ~/.gitconfig
 ln -sF ~/.dotfiles/zsh/.zshenv ~/.zshenv
 ln -sF ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -sF ~/.dotfiles/zsh/.zprofile ~/.zprofile
 ln -sF ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -sF ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sF ~/.dotfiles/hyper/.hyper.js ~/.hyper.js

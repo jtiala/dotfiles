@@ -20,6 +20,7 @@ mkdir ../.bak
 [ -f "../../.gitconfig" ] && cp ../../.gitconfig ../.bak/.gitconfig.bak
 [ -f "../../.zshenv" ] && cp ../../.zshenv ../.bak/.zshenv.bak
 [ -f "../../.zshrc" ] && cp ../../.zshrc ../.bak/.zshrc.bak
+[ -f "../../.zprofile" ] && cp ../../.zprofile ../.bak/.zprofile.bak
 [ -f "../../.vimrc" ] && cp ../../.vimrc ../.bak/.vimrc.bak
 [ -d "../../.vim" ] && cp -R ../../.vim/ ../.bak/.vim.bak
 [ -f "../../.tmux.conf" ] && cp ../../.tmux.conf ../.bak/.tmux.conf.bak
