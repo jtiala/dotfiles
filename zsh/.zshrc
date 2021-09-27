@@ -60,3 +60,8 @@ if [ -d "$HOME/.pyenv" ]; then
 
 fi
 
+#pyenv-virtualenv
+if command -v pyenv-virtualenv-init 1>/dev/null 2>&1; then
+  eval "$(pyenv virtualenv-init -)"
+fi
+
