@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# Ask for confirmation before pushing to main or master branch.
-# NOTE: this only affects repositories initialized after acuiring this script.
+# Ask for confirmation before pushing to main, trunk or master branch.
+# NOTE: this only affects repositories initialized after acuiring this script. To add (or update) this hook to an
+# existing repository, do `rm .git/hooks/pre-push; cp ~/.dotfiles/git/templates/hooks/pre-push .git/hooks/pre-push` 
 
-protected_branches=('master' 'main')
+protected_branches=('main' 'trunk' 'master')
 current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 
 if [[ " ${protected_branches[*]} " =~ " ${current_branch} " ]]; then
