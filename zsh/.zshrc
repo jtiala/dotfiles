@@ -57,11 +57,19 @@ if [ -d "$HOME/.pyenv" ]; then
   if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
   fi
-
 fi
 
-#pyenv-virtualenv
+# pyenv-virtualenv
 if command -v pyenv-virtualenv-init 1>/dev/null 2>&1; then
   eval "$(pyenv virtualenv-init -)"
+fi
+
+# jenv
+if [ -d "$HOME/.jenv" ]; then
+  export PATH="$HOME/.jenv/bin:$PATH"
+  
+  if command -v jenv 1>/dev/null 2>&1; then
+    eval "$(jenv init -)"
+  fi
 fi
 
