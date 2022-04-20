@@ -1,5 +1,8 @@
 # vim: ts=4 sw=4
 
+# Uncomment to enable profiler
+# zmodload zsh/zprof
+
 zsh_path=~/.dotfiles/zsh
 fpath=( $zsh_path $fpath )
 
@@ -31,7 +34,7 @@ fi
 # nvm
 if [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 fi
 
@@ -72,4 +75,7 @@ if [ -d "$HOME/.jenv" ]; then
     eval "$(jenv init -)"
   fi
 fi
+
+# Uncomment to enable profiler
+# zprof
 
