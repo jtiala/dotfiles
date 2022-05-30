@@ -1,7 +1,6 @@
 set nocompatible
 set packpath=~/.dotfiles/vim
 
-
 " theme
 set guifont=Victor\ Mono\ 12
 set termguicolors
@@ -72,11 +71,11 @@ cmap w!! w !sudo tee % >/dev/null
 
 " netrw
 let g:netrw_banner = 0
-let g:netrw_liststyle = 0 
+let g:netrw_liststyle = 0
 
 " vim-signify
 let g:signify_vcs_list = ['git']
-let g:signify_cursorhold_insert = 1   
+let g:signify_cursorhold_insert = 1
 let g:signify_cursorhold_normal = 1
 let g:signify_update_on_bufenter = 0
 let g:signify_update_on_focusgained = 1
@@ -86,16 +85,16 @@ nmap <leader>s :SignifyToggle <CR>:set nu!<CR>
 
 " lightline
 let g:lightline = {
-			\ 'colorscheme': 'darcula',
-			\ 'active': {
-			\   'left': [ [ 'mode', 'paste' ],
- 			\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-			\ },
-			\ 'component_function': {
-			\   'gitbranch': 'gitbranch#name'
-			\ },
-			\ 'component_expand': {'buffers': 'lightline#bufferline#buffers'},
-			\ 'component_type': {'buffers': 'tabsel'},
-			\ 'tabline': {'left': [['buffers']], 'right': []}
-			\ }
+      \ 'colorscheme': 'darcula',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ 'component_expand': {'buffers': 'lightline#bufferline#buffers'},
+      \ 'component_type': {'buffers': 'tabsel'},
+      \ 'tabline': {'left': [['buffers']], 'right': []}
+      \ }
 

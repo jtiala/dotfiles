@@ -2,22 +2,20 @@
 
 # Ask for confirmation before pushing to main, trunk or master branch.
 # NOTE: this only affects repositories initialized after acuiring this script. To add (or update) this hook to an
-# existing repository, do `rm .git/hooks/pre-push; cp ~/.dotfiles/git/templates/hooks/pre-push .git/hooks/pre-push` 
+# existing repository, do `rm .git/hooks/pre-push; cp ~/.dotfiles/git/templates/hooks/pre-push .git/hooks/pre-push`
 
 protected_branches=('main' 'trunk' 'master')
 current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 
 if [[ " ${protected_branches[*]} " =~ " ${current_branch} " ]]; then
-  read -p "You're about to push $current_branch, is that what you intended? [y|n] " -n 1 -r < /dev/tty
+  read -p "You're about to push $current_branch, is that what you intended? [y|n] " -n 1 -r </dev/tty
   echo
-  
-  if echo $REPLY | grep -E '^[Yy]$' > /dev/null
-    then
-      exit 0 # push will execute
+
+  if echo $REPLY | grep -E '^[Yy]$' >/dev/null; then
+    exit 0 # push will execute
   fi
-  
+
   exit 1 # push will not execute
 fi
 
 exit 0 # push will execute
-

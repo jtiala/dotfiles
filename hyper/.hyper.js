@@ -22,9 +22,5 @@ module.exports = {
     macOptionSelectionMode: "vertical",
     webGLRenderer: true,
   },
-	plugins: [
-		"hypercwd",
-		"hyperminimal",
-		"hyper-dracula",
-	],
+  plugins: ["hypercwd", "hyperminimal", "hyper-dracula"],
 };

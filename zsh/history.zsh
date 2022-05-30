@@ -1,7 +1,7 @@
 # vim: ts=4 sw=4
 
 if [ -z $HISTFILE ]; then
-	HISTFILE=$HOME/.zsh_history
+  HISTFILE=$HOME/.zsh_history
 fi
 
 HISTSIZE=30000
@@ -15,4 +15,3 @@ setopt hist_ignore_dups
 setopt hist_ignore_space
 setopt hist_verify
 setopt inc_append_history
-

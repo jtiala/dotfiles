@@ -7,7 +7,10 @@ echo "Running backup.sh"
 set -e
 
 # cd to the folder of the script to ensure correct paths
-parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+parent_path=$(
+  cd "$(dirname "${BASH_SOURCE[0]}")"
+  pwd -P
+)
 cd "$parent_path"
 
 # Remove old backups
@@ -27,4 +30,3 @@ mkdir ../.bak
 [ -f "../../.hyper.js" ] && cp ../../.hyper.js ../.bak/.hyper.js.bak
 
 echo "backup.sh finished"
-

@@ -4,7 +4,7 @@
 # zmodload zsh/zprof
 
 zsh_path=~/.dotfiles/zsh
-fpath=( $zsh_path $fpath )
+fpath=($zsh_path $fpath)
 
 # Init Pure prompt
 autoload -U promptinit && promptinit
@@ -40,7 +40,7 @@ fi
 
 # avn
 if [ -d "$HOME/.avn/bin" ]; then
-  [ -s "$HOME/.avn/bin/avn.sh" ] && source "$HOME/.avn/bin/avn.sh" 
+  [ -s "$HOME/.avn/bin/avn.sh" ] && source "$HOME/.avn/bin/avn.sh"
 fi
 
 # rbenv
@@ -70,7 +70,7 @@ fi
 # jenv
 if [ -d "$HOME/.jenv" ]; then
   export PATH="$HOME/.jenv/bin:$PATH"
-  
+
   if command -v jenv 1>/dev/null 2>&1; then
     eval "$(jenv init -)"
   fi
@@ -78,4 +78,3 @@ fi
 
 # Uncomment to enable profiler
 # zprof
-

@@ -10,4 +10,3 @@ bindkey "^[3;5~" delete-char
 # Move between words with alt+arrows
 bindkey "[D" backward-word
 bindkey "[C" forward-word
-

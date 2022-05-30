@@ -7,7 +7,10 @@ echo "Running install.sh"
 set -e
 
 # cd to the folder of the script to ensure correct paths
-parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+parent_path=$(
+  cd "$(dirname "${BASH_SOURCE[0]}")"
+  pwd -P
+)
 cd "$parent_path"
 
 # Don't show macOS last login message
@@ -38,4 +41,3 @@ ln -sF ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sF ~/.dotfiles/hyper/.hyper.js ~/.hyper.js
 
 echo "install.sh finished"
-
