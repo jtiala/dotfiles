@@ -21,7 +21,7 @@
 
       brew tap homebrew/cask-fonts
       brew install --cask font-victor-mono font-fira-code
-      brew install git zsh zsh-completions tmux fasd vim
+      brew install coreutils git zsh zsh-completions tmux fasd vim
 
 - Set ZSH as default shell
 
