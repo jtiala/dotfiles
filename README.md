@@ -2,12 +2,11 @@
 
 ## Includes dotfiles for
 
-- [ZSH][zsh] with [Pure][pure] prompt
 - [Git][git]
-- [Vim][vim]
-- [tmux][tmux]
-- [fasd][fasd]
 - [hyper][hyper]
+- [tmux][tmux]
+- [Vim][vim]
+- [ZSH][zsh] with [Prezto][prezto] configuration framework
 
 ## Installation
 
@@ -43,7 +42,7 @@
       sudo apt-get install software-properties-common dirmngr
       sudo add-apt-repository ppa:aacebedo/fasd
       sudo apt-get update
-      sudo apt-get install git zsh tmux fasd vim emacs
+      sudo apt-get install git zsh tmux fasd vim
 
 - Set ZSH as default shell
 
@@ -62,11 +61,10 @@
 
 Feel free to fork this repo and base your dotfiles on my setup. Be sure to change your git name and email at `git/.gitconfig`.
 
-[zsh]: http://www.zsh.org
-[pure]: https://github.com/sindresorhus/pure
 [git]: https://git-scm.com
-[vim]: https://www.vim.org
-[tmux]: https://github.com/tmux/tmux/wiki
-[fasd]: https://github.com/clvv/fasd
 [hyper]: https://hyper.is
+[tmux]: https://github.com/tmux/tmux/wiki
+[vim]: https://www.vim.org
+[zsh]: http://www.zsh.org
+[prezto]: https://github.com/sorin-ionescu/prezto
 [homebrew]: https://brew.sh
