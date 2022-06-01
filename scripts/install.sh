@@ -16,6 +16,10 @@ cd "$parent_path"
 # Don't show macOS last login message
 touch ~/.hushlogin
 
+# Pull and init submodules
+echo "Pulling and initing submodules"
+git submodule update --init --recursive
+
 # Backup old dotfiles
 ./backup.sh
 
