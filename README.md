@@ -19,8 +19,8 @@
 - Install dependencies
 
       brew tap homebrew/cask-fonts
-      brew install --cask font-victor-mono font-fira-code
-      brew install coreutils git zsh zsh-completions tmux fasd vim
+      brew install --cask font-victor-mono
+      brew install coreutils git tmux vim zsh
 
 - Set ZSH as default shell
 
@@ -40,9 +40,8 @@
 - Install dependencies
 
       sudo apt-get install software-properties-common dirmngr
-      sudo add-apt-repository ppa:aacebedo/fasd
       sudo apt-get update
-      sudo apt-get install git zsh tmux fasd vim
+      sudo apt-get install git tmux vim zsh
 
 - Set ZSH as default shell
 
