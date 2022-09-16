@@ -11,7 +11,7 @@ parent_path=$(
 cd "$parent_path"
 
 # Exit if git repository is dirty
-if ! (output=$(git status --porcelain) && [ -z "$output" ]); then
+if ! (output=$(git status --porcelain --ignore-submodules=dirty) && [ -z "$output" ]); then
   echo "Git repository is dirty! Commit your changes before running this update script"
   exit 1
 fi
@@ -30,10 +30,10 @@ git pull
 
 # Update submodules
 echo "Updating submodules"
-git submodule update --recursive --remote --merge
+git submodule update --recursive --remote
 
 # Commit changes if any
-if ! (output=$(git status --porcelain) && [ -z "$output" ]); then
+if ! (output=$(git status --porcelain --ignore-submodules=dirty) && [ -z "$output" ]); then
   echo "Commiting changes"
   git commit -am 'Updated submodules'
 fi
