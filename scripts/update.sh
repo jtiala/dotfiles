@@ -30,7 +30,7 @@ git pull
 
 # Update submodules
 echo "Updating submodules"
-git submodule update --recursive --remote
+git submodule update --recursive --remote --merge
 
 # Commit changes if any
 if ! (output=$(git status --porcelain) && [ -z "$output" ]); then
