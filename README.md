@@ -14,13 +14,11 @@
 
 - Install [Homebrew][homebrew]
 
-      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 - Install dependencies
 
+      brew install coreutils git tmux vim zsh
       brew tap homebrew/cask-fonts
       brew install --cask font-victor-mono
-      brew install coreutils git tmux vim zsh
 
 - Set ZSH as default shell
 
@@ -32,8 +30,47 @@
 
 - Run install script
 
-      chmod +x ~/.dotfiles/scripts/*
       ~/.dotfiles/scripts/install.sh
+
+- Set up Node with nvm
+
+      brew install nvm
+      nvm install --lts
+      node -v
+
+- Set up latest Java with jenv
+
+      brew install jenv openjdk
+      jenv add /opt/homebrew/Cellar/openjdk/[INSTALLED VERSION]
+      ln -s ~/.jenv/versions/[INSTALLED MAJOR VERSION].0 ~/.jenv/versions/[INSTALLED MAJOR VERSION]
+      jenv global [INSTALLED MAJOR VERSION]
+      java -version
+
+- Set up older Java with jenv
+
+      brew install jenv openjdk@11
+      jenv add /opt/homebrew/Cellar/openjdk@11/[INSTALLED VERSION]
+      ln -s ~/.jenv/versions/11.0 ~/.jenv/versions/11
+
+- Set up Python with pyenv
+
+      brew install pyenv pyenv-virtualenv
+      pyenv install -l
+      pyenv install [LATEST 3.x.x]
+      pyenv install [LATEST 2.x.x]
+      pyenv global [INSTALLED 3.x.x]
+      pyenv global [INSTALLED 2.x.x]
+      python --version
+      python3 --version
+      python2 --version
+
+- Set up Ruby with rbenv
+
+      brew install rbenv ruby-build
+      rbenv install -l
+      rbenv install [LATEST VERSION]
+      rbenv global [INSTALLED VERSION]
+      ruby -v
 
 ### Debian & Ubuntu
 
@@ -53,7 +90,6 @@
 
 - Run install script
 
-      chmod +x ~/.dotfiles/scripts/*
       ~/.dotfiles/scripts/install.sh
 
 ## Make it your own!
