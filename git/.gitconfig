@@ -14,6 +14,8 @@ s = status
 a = add
 aa = add -A .
 cm = commit -m
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+sweep = "!f(){ git branch --no-color --merged $([[ $1 != \"-f\" ]] && git rev-parse main) | egrep -v \"(^\\*|^\\s*(main|master|trunk|develop)$)\" | xargs git branch -d; }; f"
 
 [branch "master"]
 remote = origin
