@@ -40,5 +40,6 @@ Thumbs.db
 *.swp
 svn-commit.*
 tags
-!tags/
 TAGS
+!tags/
+
