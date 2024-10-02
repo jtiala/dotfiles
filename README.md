@@ -3,7 +3,6 @@
 ## Includes dotfiles for
 
 - [Git][git]
-- [hyper][hyper]
 - [tmux][tmux]
 - [Vim][vim]
 - [ZSH][zsh] with [Prezto][prezto] configuration framework
@@ -94,10 +93,9 @@
 
 ## Make it your own!
 
-Feel free to fork this repo and base your dotfiles on my setup. Be sure to change your git name and email at `git/.gitconfig`.
+Feel free to fork this repo and base your dotfiles on my setup. Be sure to change your git name and email at `git/.gitconfig` and make your own fork of [Prezto][prezto].
 
 [git]: https://git-scm.com
-[hyper]: https://hyper.is
 [tmux]: https://github.com/tmux/tmux/wiki
 [vim]: https://www.vim.org
 [zsh]: http://www.zsh.org
