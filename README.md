@@ -6,6 +6,7 @@
 - [tmux][tmux]
 - [Vim][vim]
 - [ZSH][zsh] with [Prezto][prezto] configuration framework
+- [direnv][direnv]
 
 ## Installation
 
@@ -15,7 +16,7 @@
 
 - Install dependencies
 
-      brew install coreutils git tmux vim zsh
+      brew install coreutils git tmux vim zsh direnv
       brew tap homebrew/cask-fonts
       brew install --cask font-victor-mono
 
@@ -101,3 +102,4 @@ Feel free to fork this repo and base your dotfiles on my setup. Be sure to chang
 [zsh]: http://www.zsh.org
 [prezto]: https://github.com/sorin-ionescu/prezto
 [homebrew]: https://brew.sh
+[direnv]: https://direnv.net

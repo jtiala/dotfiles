@@ -36,6 +36,10 @@ echo "Removing old dotfiles"
 [ -f "../../.vimrc" ] && rm ../../.vimrc
 [ -d "../../.vim" ] && rm -r ../../.vim
 [ -f "../../.tmux.conf" ] && rm ../../.tmux.conf
+[ -f "../../.config/direnv/direnv.toml" ] && rm ../../.config/direnv/direnv.toml
+
+# Create required directories
+[ ! -d "../../.config/direnv" ] && mkdir -p ../../.config/direnv
 
 # Symlink new dotfiles
 echo "Symlinking new dotfiles"
@@ -49,5 +53,6 @@ ln -sF ~/.dotfiles/zsh/prezto/runcoms/zshenv ~/.zshenv
 ln -sF ~/.dotfiles/zsh/prezto/runcoms/zshrc ~/.zshrc
 ln -sF ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -sF ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -sF ~/.dotfiles/direnv/direnv.toml ~/.config/direnv/direnv.toml
 
 echo "install.sh finished"

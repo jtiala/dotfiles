@@ -32,5 +32,6 @@ mkdir ../.bak
 [ -f "../../.vimrc" ] && cp ../../.vimrc ../.bak/.vimrc.bak
 [ -d "../../.vim" ] && cp -R ../../.vim/ ../.bak/.vim.bak
 [ -f "../../.tmux.conf" ] && cp ../../.tmux.conf ../.bak/.tmux.conf.bak
+[ -f "../../.config/direnv/direnv.toml" ] && cp ../../.config/direnv/direnv.toml ../.bak/direnv.toml
 
 echo "backup.sh finished"
