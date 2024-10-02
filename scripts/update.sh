@@ -31,6 +31,7 @@ git pull
 # Update submodules
 echo "Updating submodules"
 git submodule update --recursive --remote
+git submodule foreach git reset --hard --recurse-submodules
 
 # Commit changes if any
 if ! (output=$(git status --porcelain --ignore-submodules=dirty) && [ -z "$output" ]); then
